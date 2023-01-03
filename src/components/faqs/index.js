@@ -2,13 +2,18 @@ import React, { useState } from "react";
 import { ContentWithPaddingXl } from "components/misc/Layouts.js";
 import { ReactComponent as ChevronDownIcon } from "feather-icons/dist/icons/chevron-down.svg";
 import {
-  Answer, Description,
-  Faq, FaqsColumn, FaqsContainer, Heading,
-  HeadingContainer,
-  PrimaryBackgroundContainer,
-  Question,
-  QuestionText,
-  QuestionToggleIcon, Subheading
+    Answer,
+    Description,
+    Faq,
+    FaqsColumn,
+    FaqsContainer,
+    Heading,
+    HeadingContainer,
+    PrimaryBackgroundContainer,
+    Question,
+    QuestionText,
+    QuestionToggleIcon,
+    Subheading
 } from "./styles";
 
 export default ({

@@ -1,6 +1,4 @@
 import React from "react";
-import tw from "twin.macro";
-import appleIconImageSrc from "images/apple-icon.png";
 import {
     Container,
     Content,
@@ -16,15 +14,13 @@ import {
 } from "./styles";
 
 export default ({
-                    subheading = "Download App",
+                    subheading = "Let us know if you can make it",
                     text = "Tap the button below to RSVP.",
-                    link1Text = "App Store",
+                    link1Text = "RSVP",
                     link1Url = "http://apple.com",
-                    link1IconSrc = appleIconImageSrc,
-                    pushDownFooter = false,
                 }) => {
     return (
-        <Container css={pushDownFooter && tw`mb-20 lg:mb-24`}>
+        <Container>
             <Content>
                 <Row>
                     <TextContainer>
@@ -32,7 +28,6 @@ export default ({
                         <Text>{text}</Text>
                         <LinksContainer>
                             <Link href={link1Url}>
-                                <img src={link1IconSrc} alt=""/>
                                 <span>{link1Text}</span>
                             </Link>
                         </LinksContainer>

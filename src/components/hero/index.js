@@ -7,7 +7,7 @@ export default function Hero() {
         <NavLinks key={1}>
         </NavLinks>,
         <NavLinks key={2}>
-            <PrimaryLink href="/#">
+            <PrimaryLink href="/rsvp">
                 RSVP
             </PrimaryLink>
         </NavLinks>

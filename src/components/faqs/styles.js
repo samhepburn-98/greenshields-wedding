@@ -5,7 +5,7 @@ import { Container } from "components/misc/Layouts.js";
 import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
 import { SectionDescription } from "components/misc/Typography.js";
 
-export const PrimaryBackgroundContainer = tw(Container)`-mx-8 px-8 bg-primary-900 text-gray-100`;
+export const PrimaryBackgroundContainer = tw(Container)`-mx-8 px-8 bg-primary-500 text-gray-100`;
 
 export const HeadingContainer = tw.div``;
 export const Subheading = tw(SubheadingBase)`text-center text-gray-100 mb-4`;

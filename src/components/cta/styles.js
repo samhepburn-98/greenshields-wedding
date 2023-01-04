@@ -11,11 +11,11 @@ export const Row = tw.div`px-8 flex items-center relative z-10 flex-col lg:flex-
 export const ColumnContainer = tw.div`max-w-2xl`
 export const TextContainer = tw(ColumnContainer)``;
 export const Text = tw(SectionHeading)`text-gray-100 lg:text-left max-w-none text-3xl leading-snug`;
-export const Subheading = tw(SubheadingBase)`text-secondary-500 mb-2 tracking-wider`
+export const Subheading = tw(SubheadingBase)`text-white mb-2 tracking-wider`
 
 export const LinksContainer = tw.div`mt-4 lg:mt-8 flex flex-col items-center sm:block`
 export const Link = styled.a`
-  ${tw`w-56 p-3 sm:p-4 text-sm sm:text-base font-bold uppercase tracking-wider rounded-full inline-flex justify-center items-center mt-6 first:mt-0 sm:mt-0 sm:ml-8 first:ml-0 bg-gray-100 hocus:bg-gray-300 text-gray-900 hocus:text-gray-900 shadow hover:shadow-lg focus:shadow-outline focus:outline-none transition duration-300`}
+  ${tw`w-56 p-3 sm:p-4 text-sm sm:text-base font-bold uppercase tracking-wider rounded-full inline-flex justify-center items-center mt-6 first:mt-0 sm:mt-0 sm:ml-8 first:ml-0 bg-secondary-500 hocus:bg-secondary-700 text-white hocus:text-white shadow hover:shadow-lg focus:shadow-outline focus:outline-none transition duration-300`}
   img {
     ${tw`inline-block h-8 mr-3`}
   }

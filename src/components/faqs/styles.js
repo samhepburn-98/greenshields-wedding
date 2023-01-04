@@ -23,4 +23,4 @@ export const QuestionToggleIcon = styled(motion.span)`
     ${tw`w-6 h-6`}
   }
 `;
-export const Answer = tw(motion.div)`hidden text-sm font-normal mt-4 text-gray-300`;
+export const Answer = tw(motion.div)`hidden text-base font-normal mt-4 text-gray-300`;

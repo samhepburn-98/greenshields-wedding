@@ -1,7 +1,7 @@
 import GlobalStyles from 'styles/GlobalStyles';
 import MainLandingPage from "MainLandingPage.js";
 
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import "./app.css";
 import RsvpPage from "./RsvpPage";
 
@@ -9,12 +9,12 @@ export default function App() {
     return (
         <>
             <GlobalStyles/>
-            <Router basename={process.env.PUBLIC_URL}>
+            <HashRouter basename={process.env.PUBLIC_URL}>
                 <Routes>
                     <Route path="/" element={<MainLandingPage/>}/>
                     <Route path="/rsvp" element={<RsvpPage/>}/>
                 </Routes>
-            </Router>
+            </HashRouter>
         </>
     );
 }

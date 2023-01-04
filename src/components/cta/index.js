@@ -17,7 +17,7 @@ export default ({
                     subheading = "Let us know if you can make it",
                     text = "Tap the button below to RSVP.",
                     link1Text = "RSVP",
-                    link1Url = "http://apple.com",
+                    link1Url = "/rsvp",
                 }) => {
     return (
         <Container>

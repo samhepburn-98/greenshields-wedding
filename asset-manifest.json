@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/greenshields-wedding/static/css/main.190997dd.css",
-    "main.js": "/greenshields-wedding/static/js/main.04b77c35.js",
+    "main.js": "/greenshields-wedding/static/js/main.2660e419.js",
     "static/media/CormorantGaramond-Regular.ttf": "/greenshields-wedding/static/media/CormorantGaramond-Regular.4114a151797af532cace.ttf",
     "static/media/bg-pattern.jpg": "/greenshields-wedding/static/media/bg-pattern.a7368baf49cc4c67f012.jpg",
     "static/media/ChurchOldPic.jpeg": "/greenshields-wedding/static/media/ChurchOldPic.2250d7c9e18b5e09b651.jpeg",
@@ -22,10 +22,10 @@
     "static/media/chevron-down.svg": "/greenshields-wedding/static/media/chevron-down.c3e123cf78bc368a192f3e2dee97daba.svg",
     "static/media/facebook-icon.svg": "/greenshields-wedding/static/media/facebook-icon.7bff6f2a00428b5040ce1d28baa38443.svg",
     "main.190997dd.css.map": "/greenshields-wedding/static/css/main.190997dd.css.map",
-    "main.04b77c35.js.map": "/greenshields-wedding/static/js/main.04b77c35.js.map"
+    "main.2660e419.js.map": "/greenshields-wedding/static/js/main.2660e419.js.map"
   },
   "entrypoints": [
     "static/css/main.190997dd.css",
-    "static/js/main.04b77c35.js"
+    "static/js/main.2660e419.js"
   ]
 }

@@ -27,6 +27,7 @@ import {
     Title,
     TitleReviewContainer
 } from "./styles";
+import { css } from "styled-components/macro"; //eslint-disable-line
 
 export default function ThreeColSliderCards() {
     // useState is used instead of useRef below because we want to re-render when sliderRef becomes available (not null)

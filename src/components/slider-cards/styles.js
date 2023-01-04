@@ -5,7 +5,7 @@ import { SectionHeading } from "components/misc/Headings";
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons";
 
 export const Container = tw.div`relative`;
-export const Content = tw.div`max-w-screen-xl mx-auto py-16 lg:py-20`;
+export const Content = tw.div`max-w-screen-xl mx-auto py-16 lg:py-20 overflow-hidden`;
 
 export const HeadingWithControl = tw.div`flex flex-col items-center sm:items-stretch sm:flex-row justify-between`;
 export const Heading = tw(SectionHeading)``;

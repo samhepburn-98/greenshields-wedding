@@ -9,7 +9,7 @@ export default function App() {
     return (
         <>
             <GlobalStyles/>
-            <HashRouter basename={process.env.PUBLIC_URL}>
+            <HashRouter base="/">
                 <Routes>
                     <Route path="/" element={<MainLandingPage/>}/>
                     <Route path="/rsvp" element={<RsvpPage/>}/>

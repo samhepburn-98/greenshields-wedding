@@ -13,7 +13,7 @@ import {
 } from "./styles";
 import d2dLogo from "../../images/d2d-logo.png";
 import amberLogo from "../../images/amber-logo.jpg";
-import aLineLogo from "../../images/A-line-logo.png";
+import aLineLogo from "../../images/a-line-logo.png";
 
 export default ({
                     subheading = "Need a ride home?",

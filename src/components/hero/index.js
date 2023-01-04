@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLinks } from "../header/styles";
-import { Container, Content, Heading, HeroContainer, OpacityOverlay, PrimaryLink, StyledHeader } from "./styles";
+import { Container, Content, Heading, HeroContainer, OpacityOverlay, PrimaryLink, StyledHeader, Subheading } from "./styles";
 
 export default function Hero() {
     const navLinks = [
@@ -19,6 +19,7 @@ export default function Hero() {
             <HeroContainer>
                 <StyledHeader links={navLinks}/>
                 <Content>
+                    <Subheading>14th October 2023</Subheading>
                     <Heading>
                         The Greenshields
                         <br/>

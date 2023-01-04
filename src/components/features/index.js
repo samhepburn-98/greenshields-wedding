@@ -16,7 +16,7 @@ import {
     Title
 } from "./styles";
 import churchPic from "../../images/ChurchOldPic.jpeg"
-import venuePic from "../../images/huge.jpg"
+import venuePic from "../../images/huge.jpeg"
 
 export default () => {
     const cards = [

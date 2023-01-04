@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/greenshields-wedding/static/css/main.190997dd.css",
+    "main.js": "/greenshields-wedding/static/js/main.aafdaee4.js",
+    "static/media/CormorantGaramond-Regular.ttf": "/greenshields-wedding/static/media/CormorantGaramond-Regular.4114a151797af532cace.ttf",
+    "static/media/bg-pattern.jpg": "/greenshields-wedding/static/media/bg-pattern.a7368baf49cc4c67f012.jpg",
+    "static/media/ChurchOldPic.jpeg": "/greenshields-wedding/static/media/ChurchOldPic.2250d7c9e18b5e09b651.jpeg",
+    "static/media/huge.jpeg": "/greenshields-wedding/static/media/huge.53c86a52746abad7c5b9.jpeg",
+    "static/media/d2d-logo.png": "/greenshields-wedding/static/media/d2d-logo.d7f49ba245107268d9b9.png",
+    "static/media/dot-pattern.svg": "/greenshields-wedding/static/media/dot-pattern.14ae88d3d92b86d18430bf46c6698f00.svg",
+    "index.html": "/greenshields-wedding/index.html",
+    "static/media/svg-decorator-blob-9.svg": "/greenshields-wedding/static/media/svg-decorator-blob-9.864725d408472229b2fcf9a2fa47f16e.svg",
+    "static/media/svg-decorator-blob-8.svg": "/greenshields-wedding/static/media/svg-decorator-blob-8.b1218ef08362377dd87986d20d2d22cb.svg",
+    "static/media/svg-decorator-blob-7.svg": "/greenshields-wedding/static/media/svg-decorator-blob-7.87e385f70d6b21794d7673a4326fdbf4.svg",
+    "static/media/menu.svg": "/greenshields-wedding/static/media/menu.644fa295fdd5f662e642ba6bfb084239.svg",
+    "static/media/star.svg": "/greenshields-wedding/static/media/star.8070f2335a60a0172b4cde8fddb5b020.svg",
+    "static/media/dollar-sign.svg": "/greenshields-wedding/static/media/dollar-sign.8d9a6f938731fde21207ac6851ae5fcb.svg",
+    "static/media/map-pin.svg": "/greenshields-wedding/static/media/map-pin.8c41fcd32a64210260619a622335959e.svg",
+    "static/media/x.svg": "/greenshields-wedding/static/media/x.6c9a4ba71a333be7b021fc6da39d864c.svg",
+    "static/media/chevron-left.svg": "/greenshields-wedding/static/media/chevron-left.982a40d4f9e3cf9fdaeaf4af9da46c14.svg",
+    "static/media/chevron-right.svg": "/greenshields-wedding/static/media/chevron-right.d45fd2f46e93f5c3aa0a7d0617d9fecf.svg",
+    "static/media/chevron-down.svg": "/greenshields-wedding/static/media/chevron-down.c3e123cf78bc368a192f3e2dee97daba.svg",
+    "static/media/facebook-icon.svg": "/greenshields-wedding/static/media/facebook-icon.7bff6f2a00428b5040ce1d28baa38443.svg",
+    "main.190997dd.css.map": "/greenshields-wedding/static/css/main.190997dd.css.map",
+    "main.aafdaee4.js.map": "/greenshields-wedding/static/js/main.aafdaee4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.190997dd.css",
+    "static/js/main.aafdaee4.js"
+  ]
+}

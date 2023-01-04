@@ -2,41 +2,38 @@ import React from "react";
 import { Container, ContentWithPaddingXl } from "components/misc/Layouts.js";
 import { SectionHeading as Heading } from "components/misc/Headings.js";
 import {
-    CustomerName,
     DecoratorBlob1,
     DecoratorBlob2,
-    Image,
+    Image, Link,
     Quote,
     Subheading,
     Testimonial,
     TestimonialContainer,
     Testimonials
 } from "./styles";
+import d2dLogo from "../../images/d2d-logo.png";
+import amberLogo from "../../images/amber-logo.jpg";
+import aLineLogo from "../../images/A-line-logo.png";
 
 export default ({
                     subheading = "Need a ride home?",
                     heading = "Local Taxi Services",
                     testimonials = [
                         {
-                            imageSrc:
-                                "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3.25&w=512&h=512&q=80",
-                            quote:
-                                "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.",
-                            customerName: "Charlotte Hale"
+                            imageSrc: d2dLogo,
+                            quote: "Door 2 Door Chesterfield",
+                            customerName: "01246 202020"
+                            //https://door2doortaxi.co.uk
                         },
                         {
-                            imageSrc:
-                                "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=512&h=512&q=80",
-                            quote:
-                                "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.",
-                            customerName: "Adam Cuppy"
+                            imageSrc: amberLogo,
+                            quote: "Amber Taxis Alfreton",
+                            customerName: "01773 836100"
                         },
                         {
-                            imageSrc:
-                                "https://images.unsplash.com/photo-1580852300654-03c803a14e24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4.25&w=512&h=512&q=80",
-                            quote:
-                                "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.",
-                            customerName: "Steven Marcetti"
+                            imageSrc: aLineLogo,
+                            quote: "A Line Chesterfield",
+                            customerName: "01246 555555"
                         }
                     ]
                 }) => {
@@ -51,8 +48,8 @@ export default ({
                             <TestimonialContainer key={index}>
                                 <Testimonial>
                                     <Image src={testimonial.imageSrc}/>
-                                    <Quote>"{testimonial.quote}"</Quote>
-                                    <CustomerName>- {testimonial.customerName}</CustomerName>
+                                    <Quote>{testimonial.quote}</Quote>
+                                    <Link href={`tel:${testimonial.customerName}`}>{testimonial.customerName}</Link>
                                 </Testimonial>
                             </TestimonialContainer>
                         ))

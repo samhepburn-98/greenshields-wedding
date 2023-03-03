@@ -11,10 +11,10 @@ import {
     TestimonialContainer,
     Testimonials
 } from "./styles";
-import amberLogo from "../../images/amber-logo.jpg";
-import aLineLogo from "../../images/a-line-logo.png";
-import galaxyLogo from "../../images/galaxy-logo.png";
-import centralLogo from "../../images/central-logo.png";
+import amberLogo from "../../images/taxis/amber-logo.jpg";
+import aLineLogo from "../../images/taxis/a-line-logo.png";
+import galaxyLogo from "../../images/taxis/galaxy-logo.png";
+import centralLogo from "../../images/taxis/central-logo.png";
 
 export default ({
                     subheading = "Need a ride home?",

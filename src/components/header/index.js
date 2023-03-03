@@ -18,6 +18,7 @@ import {
   NavToggle,
   PrimaryLink
 } from "./styles";
+import logo from "../../images/mandm-logo.PNG";
 
 export default ({ roundedHeaderButton = false, logoLink, links, className, collapseBreakpointClass = "lg" }) => {
     /*
@@ -51,7 +52,7 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
 
     const defaultLogoLink = (
         <LogoLink href="/">
-            M&M
+            <img src={logo} alt="M&M>" style={{height:50, width: "auto"}}/>
         </LogoLink>
     );
 

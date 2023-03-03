@@ -9,7 +9,7 @@ export default function App() {
     return (
         <>
             <GlobalStyles/>
-            <Router basename={process.env.PUBLIC_URL}>
+            <Router>
                 <Routes>
                     <Route path="/" element={<MainLandingPage/>}/>
                     <Route path="/rsvp" element={<RsvpPage/>}/>

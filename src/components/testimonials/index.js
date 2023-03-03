@@ -11,30 +11,36 @@ import {
     TestimonialContainer,
     Testimonials
 } from "./styles";
-import d2dLogo from "../../images/d2d-logo.png";
 import amberLogo from "../../images/amber-logo.jpg";
 import aLineLogo from "../../images/a-line-logo.png";
+import galaxyLogo from "../../images/galaxy-logo.png";
+import centralLogo from "../../images/central-logo.png";
 
 export default ({
                     subheading = "Need a ride home?",
                     heading = "Local Taxi Services",
                     testimonials = [
                         {
-                            imageSrc: d2dLogo,
-                            quote: "Door 2 Door Chesterfield",
-                            customerName: "01246 202020"
-                            //https://door2doortaxi.co.uk
-                        },
-                        {
                             imageSrc: amberLogo,
                             quote: "Amber Taxis Alfreton",
                             customerName: "01773 836100"
                         },
                         {
+                            imageSrc: centralLogo,
+                            quote: "Central Cars Chesterfield",
+                            customerName: "01246 200500"
+                            //https://door2doortaxi.co.uk
+                        },
+                        {
                             imageSrc: aLineLogo,
                             quote: "A Line Chesterfield",
                             customerName: "01246 555555"
-                        }
+                        },
+                        {
+                            imageSrc: galaxyLogo,
+                            quote: "Galaxy Travel Chesterfield",
+                            customerName: "01246 272727"
+                        },
                     ]
                 }) => {
     return (

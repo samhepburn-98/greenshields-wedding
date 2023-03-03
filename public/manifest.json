@@ -1,6 +1,6 @@
 {
-  "short_name": "Treact",
-  "name": "Treact - Modern React Templates and Components for building Landing Pages",
+  "short_name": "Greenshields Wedding",
+  "name": "Greenshields Wedding - RSVP & Useful Info",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +20,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
+  "theme_color": "#233244",
   "background_color": "#ffffff"
 }

@@ -263,7 +263,7 @@ module.exports = {
             DEFAULT: '1',
         },
         fontFamily: {
-            display: ['Cormorant Garamond', 'system-ui'],
+            display: ['Gilda Display', 'system-ui'],
             sans: [
                 'system-ui',
                 '-apple-system',

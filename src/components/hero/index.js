@@ -1,16 +1,11 @@
 import React from "react";
 import { NavLinks } from "../header/styles";
-import { Container, Content, Heading, HeroContainer, OpacityOverlay, PrimaryLink, StyledHeader, Subheading } from "./styles";
+import { Container, Content, Heading, HeroContainer, OpacityOverlay, StyledHeader, Subheading } from "./styles";
 
 export default function Hero() {
     const navLinks = [
         <NavLinks key={1}>
         </NavLinks>,
-        <NavLinks key={2}>
-            <PrimaryLink href="/rsvp">
-                RSVP
-            </PrimaryLink>
-        </NavLinks>
     ];
 
     return (

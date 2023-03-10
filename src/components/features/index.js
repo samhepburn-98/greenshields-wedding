@@ -42,13 +42,6 @@ export default () => {
     return (
         <Container>
             <SingleColumn>
-                {/*<HeadingInfoContainer>*/}
-                {/*<HeadingTitle>Popular Events</HeadingTitle>*/}
-                {/*<HeadingDescription>*/}
-                {/*    Here are some of the most popular events in New York City curated by professionals.*/}
-                {/*</HeadingDescription>*/}
-                {/*</HeadingInfoContainer>*/}
-
                 <Content>
                     {
                         cards.map((card, i) => (

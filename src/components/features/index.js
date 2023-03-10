@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, Container, Content, Description, Details, Image, Link, SingleColumn, Subtitle, Title } from "./styles";
 import churchPic from "../../images/ChurchOldPic.jpeg"
-import venuePic from "../../images/huge.jpeg"
+import venuePic from "../../images/TM-1002.jpg"
 
 export default () => {
     const cards = [

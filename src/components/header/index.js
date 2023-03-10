@@ -4,19 +4,15 @@ import tw from "twin.macro";
 import { css } from "styled-components/macro"; //eslint-disable-line
 
 import useAnimatedNavToggler from "../../helpers/useAnimatedNavToggler.js";
-
-import { ReactComponent as MenuIcon } from "feather-icons/dist/icons/menu.svg";
-import { ReactComponent as CloseIcon } from "feather-icons/dist/icons/x.svg";
 import {
-  DesktopNavLinks,
-  Header,
-  LogoLink,
-  MobileNavLinks,
-  MobileNavLinksContainer,
-  NavLink,
-  NavLinks,
-  NavToggle,
-  PrimaryLink
+    DesktopNavLinks,
+    Header,
+    LogoLink,
+    MobileNavLinks,
+    MobileNavLinksContainer,
+    NavLink,
+    NavLinks,
+    PrimaryLink
 } from "./styles";
 import logo from "../../images/mandm-logo.PNG";
 
@@ -47,12 +43,12 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
         </NavLinks>
     ];
 
-    const { showNavLinks, animation, toggleNavbar } = useAnimatedNavToggler();
+    const { animation } = useAnimatedNavToggler();
     const collapseBreakpointCss = collapseBreakPointCssMap[collapseBreakpointClass];
 
     const defaultLogoLink = (
         <LogoLink href="/">
-            <img src={logo} alt="M&M>" style={{height:50, width: "auto"}}/>
+            <img src={logo} alt="M&M>" style={{ height: 50, width: "auto" }}/>
         </LogoLink>
     );
 
@@ -72,9 +68,6 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
                                 css={collapseBreakpointCss.mobileNavLinks}>
                     {links}
                 </MobileNavLinks>
-                <NavToggle onClick={toggleNavbar} className={showNavLinks ? "open" : "closed"}>
-                    {showNavLinks ? <CloseIcon tw="w-6 h-6"/> : <MenuIcon tw="w-6 h-6"/>}
-                </NavToggle>
             </MobileNavLinksContainer>
         </Header>
     );

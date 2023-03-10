@@ -1,16 +1,7 @@
 import React from "react";
 import { Container, ContentWithPaddingXl } from "components/misc/Layouts.js";
 import { SectionHeading as Heading } from "components/misc/Headings.js";
-import {
-    DecoratorBlob1,
-    DecoratorBlob2,
-    Image, Link,
-    Quote,
-    Subheading,
-    Testimonial,
-    TestimonialContainer,
-    Testimonials
-} from "./styles";
+import { Image, Link, Quote, Subheading, Testimonial, TestimonialContainer, Testimonials } from "./styles";
 import amberLogo from "../../images/taxis/amber-logo.jpg";
 import aLineLogo from "../../images/taxis/a-line-logo.png";
 import galaxyLogo from "../../images/taxis/galaxy-logo.png";
@@ -62,9 +53,6 @@ export default ({
                     }
                 </Testimonials>
             </ContentWithPaddingXl>
-
-            <DecoratorBlob1/>
-            <DecoratorBlob2/>
         </Container>
     );
 };

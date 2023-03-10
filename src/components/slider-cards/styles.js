@@ -9,7 +9,7 @@ export const Content = tw.div`max-w-screen-xl mx-auto py-16 lg:py-20 overflow-hi
 
 export const HeadingWithControl = tw.div`flex flex-col items-center sm:items-stretch sm:flex-row justify-between`;
 export const Heading = tw(SectionHeading)`text-primary-500`;
-export const Controls = tw.div`flex items-center`;
+export const Controls = tw.div`flex items-center justify-center mt-4`;
 export const ControlButton = styled(PrimaryButtonBase)`
   ${tw`mt-4 sm:mt-0 first:ml-0 ml-6 rounded-full p-2`}
   svg {
@@ -20,7 +20,7 @@ export const PrevButton = tw(ControlButton)``;
 export const NextButton = tw(ControlButton)``;
 
 export const CardSlider = styled(Slider)`
-  ${tw`mt-16`}
+  ${tw`mt-8`}
   .slick-track {
     ${tw`flex`}
   }

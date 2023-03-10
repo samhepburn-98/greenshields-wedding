@@ -11,7 +11,6 @@ import {
     Controls,
     Description,
     Heading,
-    HeadingWithControl,
     IconContainer,
     IconWithText,
     NextButton,
@@ -86,13 +85,13 @@ export default function ThreeColSliderCards() {
     return (
         <Container>
             <Content>
-                <HeadingWithControl>
+                {/*<HeadingWithControl>*/}
                     <Heading>Nearby Hotels</Heading>
                     <Controls>
                         <PrevButton onClick={sliderRef?.slickPrev}><ChevronLeftIcon/></PrevButton>
                         <NextButton onClick={sliderRef?.slickNext}><ChevronRightIcon/></NextButton>
                     </Controls>
-                </HeadingWithControl>
+                {/*</HeadingWithControl>*/}
                 <CardSlider ref={setSliderRef} {...sliderSettings}>
                     {cards.map((card, index) => (
                         <Card key={index}>

@@ -1,20 +1,5 @@
 import React from "react";
-import {
-    Card,
-    Container,
-    Content,
-    Description,
-    Details,
-    Image,
-    Link,
-    SingleColumn,
-    Subtitle,
-    SvgDotPattern1,
-    SvgDotPattern2,
-    SvgDotPattern3,
-    SvgDotPattern4,
-    Title
-} from "./styles";
+import { Card, Container, Content, Description, Details, Image, Link, SingleColumn, Subtitle, Title } from "./styles";
 import churchPic from "../../images/ChurchOldPic.jpeg"
 import venuePic from "../../images/huge.jpeg"
 
@@ -58,10 +43,6 @@ export default () => {
                     }
                 </Content>
             </SingleColumn>
-            <SvgDotPattern1/>
-            <SvgDotPattern2/>
-            <SvgDotPattern3/>
-            <SvgDotPattern4/>
         </Container>
     );
 };

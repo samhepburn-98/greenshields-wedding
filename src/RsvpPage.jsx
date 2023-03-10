@@ -1,7 +1,6 @@
 import AnimationRevealPage from "./helpers/AnimationRevealPage";
 import tw from "twin.macro";
 import Header from "./components/header";
-import { PrimaryLink } from "./components/hero/styles";
 import { DesktopNavLinks, LogoLink, NavLink, NavLinks, NavToggle } from "./components/header/styles";
 import styled from "styled-components";
 import { useEffect } from "react";
@@ -10,11 +9,6 @@ const RsvpPage = () => {
     const navLinks = [
         <NavLinks key={1}>
         </NavLinks>,
-        <NavLinks key={2}>
-            <PrimaryLink href="/">
-                Return Home
-            </PrimaryLink>
-        </NavLinks>
     ];
 
     function test() {

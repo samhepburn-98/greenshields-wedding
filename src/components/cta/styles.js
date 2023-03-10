@@ -4,7 +4,7 @@ import { SectionHeading, Subheading as SubheadingBase } from "../misc/Headings";
 import styled from "styled-components";
 import { ReactComponent as SvgDecoratorBlob1 } from "images/svg-decorator-blob-9.svg";
 
-export const Container = tw(ContainerBase)`bg-gray-900 -mx-8`
+export const Container = tw(ContainerBase)`bg-primary-500 -mx-8`
 export const Content = tw(ContentWithPaddingXl)``
 export const Row = tw.div`px-8 flex items-center relative z-10 flex-col lg:flex-row text-center justify-center`;
 

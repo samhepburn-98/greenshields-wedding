@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLinks } from "../header/styles";
-import { Container, Content, Heading, HeroContainer, OpacityOverlay, StyledHeader, Subheading } from "./styles";
+import { Container, Content, Heading, HeroContainer, StyledHeader, Subheading } from "./styles";
 
 export default function Hero() {
     const navLinks = [
@@ -10,7 +10,7 @@ export default function Hero() {
 
     return (
         <Container>
-            <OpacityOverlay/>
+            {/*<OpacityOverlay/>*/}
             <HeroContainer>
                 <StyledHeader links={navLinks}/>
                 <Content>

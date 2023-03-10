@@ -3,7 +3,7 @@ import tw from "twin.macro";
 import styled from "styled-components";
 
 export const Header = tw.header`
-  flex justify-between items-center
+  flex justify-center items-center
   max-w-screen-xl mx-auto
 `;
 
@@ -26,14 +26,14 @@ export const PrimaryLink = tw(NavLink)`
 `;
 
 export const LogoLink = styled(NavLink)`
-  ${tw`flex items-center font-black border-b-0 text-2xl! ml-0!`};
+  ${tw`flex items-center font-black border-b-0 text-2xl! ml-0! mr-0`};
 
   img {
-    ${tw`w-10 mr-3`}
+    ${tw`w-10`}
   }
 `;
 
-export const MobileNavLinksContainer = tw.nav`flex flex-1 items-center justify-between`;
+export const MobileNavLinksContainer = tw.nav`flex flex-1 items-center justify-center`;
 export const NavToggle = tw.button`
   lg:hidden z-20 focus:outline-none hocus:text-primary-500 transition duration-300
 `;
@@ -45,5 +45,5 @@ export const MobileNavLinks = motion(styled.div`
 `);
 
 export const DesktopNavLinks = tw.nav`
-  hidden lg:flex flex-1 justify-between items-center
+  hidden lg:flex flex-1 justify-center items-center
 `;

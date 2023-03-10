@@ -27,10 +27,10 @@ export const OpacityOverlay = tw.div`z-10 absolute inset-0 bg-black opacity-75`;
 export const HeroContainer = tw.div`z-20 relative px-6 sm:px-8 mx-auto h-full flex flex-col`;
 export const Content = tw.div`-mt-24 px-4 flex flex-1 flex-col justify-center items-center`;
 
-export const Subheading = tw(SubheadingBase)`text-base md:text-2xl text-secondary-400 mb-2 tracking-wider`
+export const Subheading = tw(SubheadingBase)`text-base md:text-3xl text-secondary-400 mb-2 tracking-wider`
 
 export const Heading = styled.h1`
-  ${tw`text-3xl text-center sm:text-4xl lg:text-5xl xl:text-6xl font-black text-gray-100 leading-snug sm:mt-0`}
+  ${tw`text-4xl text-center sm:text-5xl lg:text-6xl xl:text-7xl font-black text-gray-100 leading-snug sm:mt-0`}
   span {
     ${tw`inline-block mt-2`}
   }

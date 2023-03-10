@@ -30,7 +30,7 @@ export const Content = tw.div`-mt-24 px-4 flex flex-1 flex-col justify-center it
 export const Subheading = tw(SubheadingBase)`text-base md:text-3xl text-secondary-400 mb-2 tracking-wider`
 
 export const Heading = styled.h1`
-  ${tw`text-4xl text-center sm:text-5xl lg:text-6xl xl:text-7xl font-black text-gray-100 leading-snug sm:mt-0`}
+  ${tw`text-4xl text-center sm:text-5xl lg:text-6xl xl:text-7xl text-gray-100 leading-snug sm:mt-0`}
   span {
     ${tw`inline-block mt-2`}
   }

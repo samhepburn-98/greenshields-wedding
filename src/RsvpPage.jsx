@@ -3,7 +3,7 @@ import tw from "twin.macro";
 import Header from "./components/header";
 import { DesktopNavLinks, LogoLink, NavLink, NavLinks, NavToggle } from "./components/header/styles";
 import styled from "styled-components";
-import { useSearchParams } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 import { useEffect, useState } from "react";
 
@@ -31,6 +31,8 @@ const Input = tw.input`text-white mt-6 first:mt-0 border-b-2 py-3 bg-gray-900 te
 
 const SubmitButton = tw(PrimaryButtonBase)`inline-block mt-8`
 
+const Description = tw.p`mt-4 text-center text-red-500 md:text-left text-sm md:text-base lg:text-lg font-medium leading-relaxed`
+
 const RsvpPage = () => {
     const navLinks = [
         <NavLinks key={1}>
@@ -39,9 +41,19 @@ const RsvpPage = () => {
 
     const [searchParams] = useSearchParams()
     const code = searchParams.get("code");
+    const error = searchParams.get("error");
 
     const DAY_CODE = "letsgetmarried";
     const NIGHT_CODE = "timetoparty";
+
+    const navigate = useNavigate();
+    useEffect(() => {
+            const codeExists = code !== "" && code !== null;
+            const codeIsValid = code === DAY_CODE || code === NIGHT_CODE;
+            if (codeExists && !codeIsValid) navigate("/rsvp?error=true")
+        },
+        [code, navigate, DAY_CODE, NIGHT_CODE]
+    );
 
     const LoadForm = () => {
         let r, d = document, gt = d.getElementById, cr = d.createElement, tg = d.getElementsByTagName,
@@ -97,6 +109,7 @@ const RsvpPage = () => {
                                 onChange={handleChange}
                             />
                             <SubmitButton type="submit">Submit</SubmitButton>
+                            {error && <Description>Unknown invite code, please try again</Description>}
                         </Form>
                     }
                     {

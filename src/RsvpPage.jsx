@@ -58,14 +58,22 @@ const RsvpPage = () => {
         if (code === DAY_CODE || code === NIGHT_CODE) LoadForm()
     }, [code, DAY_CODE, NIGHT_CODE])
 
-    const dayForm = <div data-aidaform-widget="form-2019-12"
-                         data-url="https://samhepburn98.aidaform.com/greenshields-wedding"
-                         data-width="100%" data-height="500px" data-do-resize>
+    const dayForm = <div
+        data-aidaform-widget="form-2019-12"
+        data-url="https://samhepburn98.aidaform.com/greenshields-wedding"
+        data-width="100%"
+        data-height="500px"
+        data-do-resize
+    >
     </div>
 
-    const nightForm = <div data-aidaform-widget="form-2019-12"
-                           data-url="https://samhepburn98.aidaform.com/greenshields-wedding"
-                           data-width="100%" data-height="500px" data-do-resize>
+    const nightForm = <div
+        data-aidaform-widget="form-2019-12"
+        data-url="https://samhepburn98.aidaform.com/greenshields-wedding-night"
+        data-width="100%"
+        data-height="500px"
+        data-do-resize
+    >
     </div>
 
     const [query, setQuery] = useState("");

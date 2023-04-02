@@ -1,6 +1,6 @@
 import tw from "twin.macro";
 import styled from "styled-components";
-import footerImg from "../../images/footer-img.png";
+import footerImg from "../../images/footer_pattern.svg";
 //
 // export const Container = tw(ContainerBase)`bg-gray-900 text-gray-100 -mx-8 -mb-8`
 // export const Content = tw.div`max-w-screen-xl mx-auto py-10 lg:py-12`;

@@ -14,7 +14,7 @@ import {
     NavLinks,
     PrimaryLink
 } from "./styles";
-import logo from "../../images/mandm-logo.PNG";
+import logo from "../../images/MandM_navy.png";
 
 export default ({ roundedHeaderButton = false, logoLink, links, className, collapseBreakpointClass = "lg" }) => {
     /*

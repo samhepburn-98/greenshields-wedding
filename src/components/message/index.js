@@ -9,8 +9,8 @@ export default () => {
                 <QuoteContainer>
                     <QuotesLeft/>
                     <Quote>
-                        The most important thing to us is that you are able to celebrate with us, but should you wish
-                        to give a gift as well, we would love for some money to make our dream honeymoon come true.
+                        Sharing our special day with us is more than enough, however for those wishing to buy a gift, a
+                        cash contribution towards making our dream honeymoon come true would be very much appreciated.
                     </Quote>
                     <QuotesRight/>
                 </QuoteContainer>

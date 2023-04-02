@@ -12,7 +12,7 @@ export default function Hero() {
         <Container>
             {/*<OpacityOverlay/>*/}
             <HeroContainer>
-                <StyledHeader links={navLinks}/>
+                <StyledHeader color="navy" links={navLinks}/>
                 <Content>
                     <Subheading>14th October 2023</Subheading>
                     <Heading>

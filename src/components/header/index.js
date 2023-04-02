@@ -14,9 +14,10 @@ import {
     NavLinks,
     PrimaryLink
 } from "./styles";
-import logo from "../../images/MandM_navy.png";
+import navyLogo from "../../images/MandM_navy.png";
+import ivoryLogo from "../../images/MandM_ivory.png";
 
-export default ({ roundedHeaderButton = false, logoLink, links, className, collapseBreakpointClass = "lg" }) => {
+export default ({ roundedHeaderButton = false, logoLink, links, className, collapseBreakpointClass = "lg", color = "navy" }) => {
     /*
      * This header component accepts an optionals "links" prop that specifies the links to render in the navbar.
      * This links props should be an array of "NavLinks" components which is exported from this file.
@@ -46,6 +47,7 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
     const { animation } = useAnimatedNavToggler();
     const collapseBreakpointCss = collapseBreakPointCssMap[collapseBreakpointClass];
 
+    const logo = color === "navy" ? navyLogo : ivoryLogo;
     const defaultLogoLink = (
         <LogoLink href="/">
             <img src={logo} alt="M&M>" style={{ height: 50, width: "auto" }}/>

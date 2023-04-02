@@ -94,7 +94,7 @@ const RsvpPage = () => {
     return (
         <Container>
             <HeroContainer>
-                <StyledHeader links={navLinks}/>
+                <StyledHeader color="ivory" links={navLinks}/>
             </HeroContainer>
             <StyledAnimationRevealPage>
                 <Box>

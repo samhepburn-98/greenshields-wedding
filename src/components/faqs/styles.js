@@ -22,7 +22,7 @@ export const Divider = tw.hr`h-px my-8 bg-primary-300 border-0`;
 export const PrimaryBackgroundContainer = tw(Container)`-mx-8 px-8 bg-primary-500 text-gray-100`;
 
 export const HeadingContainer = tw.div``;
-export const Subheading = tw(SubheadingBase)`text-center text-gray-100 mb-4`;
+export const Subheading = tw(SubheadingBase)`text-center text-primary-500 mb-4`;
 export const FaqsColumn = tw.div`w-full lg:max-w-lg lg:mr-12 last:mr-0`;
 export const Faq = tw.div`select-none cursor-pointer border-b-2 border-primary-300 hover:border-primary-500 transition-colors duration-300 py-6`;
 

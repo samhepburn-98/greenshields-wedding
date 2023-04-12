@@ -9,11 +9,12 @@ import {
     HeaderContent,
     Heading,
     QuestionText,
-    SectionContainer
+    SectionContainer, Subheading
 } from "./styles";
 
 export default ({
-                    heading = "Got any questions?",
+                    subheading = "Got any questions?",
+                    heading = "Q&A",
                     description = "For all our friends and family who have lots of questions, please check out our Q&A first!",
                     faqs = [
                         {
@@ -63,6 +64,7 @@ export default ({
             <ContentWithPaddingXl>
                 <Column>
                     <HeaderContent>
+                        {subheading && <Subheading>{subheading}</Subheading>}
                         <Heading>{heading}</Heading>
                         {description && <Description>{description}</Description>}
                     </HeaderContent>

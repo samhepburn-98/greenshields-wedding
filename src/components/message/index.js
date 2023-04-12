@@ -1,11 +1,10 @@
 import React from "react";
-import { ContentWithPaddingXl } from "components/misc/Layouts.js";
-import { PrimaryBackgroundContainer, Quote, QuoteContainer, QuotesLeft, QuotesRight } from "./styles";
+import { Content, PrimaryBackgroundContainer, Quote, QuoteContainer, QuotesLeft, QuotesRight } from "./styles";
 
 export default () => {
     return (
         <PrimaryBackgroundContainer>
-            <ContentWithPaddingXl>
+            <Content>
                 <QuoteContainer>
                     <QuotesLeft/>
                     <Quote>
@@ -14,7 +13,7 @@ export default () => {
                     </Quote>
                     <QuotesRight/>
                 </QuoteContainer>
-            </ContentWithPaddingXl>
+            </Content>
         </PrimaryBackgroundContainer>
     );
 };

@@ -8,6 +8,7 @@ import VerticalWithAlternateImageAndTextFeatures from "components/features";
 import Footer from "components/footers";
 import ThreeColSliderCards from "./components/slider-cards";
 import Message from "components/message";
+import TwoColumnPrimaryBackgroundFAQS from "components/faqs";
 
 export default function Home() {
     return (
@@ -17,6 +18,7 @@ export default function Home() {
             <VerticalWithAlternateImageAndTextFeatures/>
             <ThreeColSliderCards/>
             <Testimonial/>
+            <TwoColumnPrimaryBackgroundFAQS/>
             <Message/>
             <Footer/>
         </AnimationRevealPage>

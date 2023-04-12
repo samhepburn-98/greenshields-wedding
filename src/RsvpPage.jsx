@@ -66,6 +66,14 @@ const RsvpPage = () => {
         [code, navigate, DAY_CODE, NIGHT_CODE]
     );
 
+    useEffect(() => {
+            const radioExists = vegan !== "" && vegan !== null;
+            const radioIsValid = vegan === "yes" || vegan === "no";
+            if (radioExists && !radioIsValid) navigate("/rsvp?error=true")
+        },
+        [vegan, navigate]
+    );
+
     return (
         <Container>
             <HeroContainer>

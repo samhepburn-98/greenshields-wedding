@@ -1,7 +1,7 @@
-import { useSearchParams } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import tw from "twin.macro";
 import { PrimaryButton as PrimaryButtonBase } from "./components/misc/Buttons";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import FormComponent from "./components/aidaform/FormComponent";
 import styled from "styled-components";
 import { DesktopNavLinks, LogoLink, NavLink, NavLinks, NavToggle } from "./components/header/styles";
@@ -56,6 +56,15 @@ const RsvpPage = () => {
 
     const DAY_CODE = "letsgetmarried";
     const NIGHT_CODE = "timetoparty";
+
+    const navigate = useNavigate();
+    useEffect(() => {
+            const codeExists = code !== "" && code !== null;
+            const codeIsValid = code === DAY_CODE || code === NIGHT_CODE;
+            if (codeExists && !codeIsValid) navigate("/rsvp?error=true")
+        },
+        [code, navigate, DAY_CODE, NIGHT_CODE]
+    );
 
     return (
         <Container>

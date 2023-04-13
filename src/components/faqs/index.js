@@ -10,8 +10,7 @@ import {
     HeaderContent,
     Heading,
     QuestionText,
-    SectionContainer,
-    Subheading
+    SectionContainer
 } from "./styles";
 
 export default ({
@@ -76,7 +75,7 @@ export default ({
                     </GiftsContainer>
 
                     <HeaderContent>
-                        {subheading && <Subheading>{subheading}</Subheading>}
+                        {/*{subheading && <Subheading>{subheading}</Subheading>}*/}
                         <Heading>{heading}</Heading>
                         {description && <Description>{description}</Description>}
                     </HeaderContent>

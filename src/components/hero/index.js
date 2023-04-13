@@ -47,8 +47,6 @@ export default function Hero() {
         }, 1000);
     }, [])
 
-    useEffect(() => console.log(timer), [timer])
-
     return (
         <Container>
             {/*<OpacityOverlay/>*/}

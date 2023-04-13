@@ -2,7 +2,6 @@ import tw from "twin.macro";
 import { Container as ContainerBase, ContentWithPaddingXl } from "../misc/Layouts";
 import { SectionHeading, Subheading as SubheadingBase } from "../misc/Headings";
 import styled from "styled-components";
-import { ReactComponent as SvgDecoratorBlob1 } from "images/svg-decorator-blob-9.svg";
 
 export const Container = tw(ContainerBase)`bg-primary-500 -mx-8`
 export const Content = tw(ContentWithPaddingXl)``
@@ -24,7 +23,3 @@ export const Link = styled.a`
     ${tw`leading-none inline-block`}
   }
 `;
-
-export const DecoratorBlobContainer = tw.div`absolute inset-0 overflow-hidden rounded-lg`
-export const DecoratorBlob1 = tw(SvgDecoratorBlob1)`absolute bottom-0 left-0 w-80 h-80 transform -translate-x-20 translate-y-32 text-gray-800 opacity-50`
-export const DecoratorBlob2 = tw(SvgDecoratorBlob1)`absolute top-0 right-0 w-80 h-80 transform  translate-x-20 -translate-y-64 text-gray-800 opacity-50`

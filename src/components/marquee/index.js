@@ -13,15 +13,24 @@ import marquee10 from "../../images/marquee/marquee10.webp";
 import marquee11 from "../../images/marquee/marquee11.webp";
 import marquee12 from "../../images/marquee/marquee12.webp";
 
-import React, { memo } from "react";
+import React, { memo, Suspense, useState } from "react";
 import tw from "twin.macro";
 import { Container as ContainerBase } from "../misc/Layouts";
+import { useImage } from "react-image";
+import PageVisibility from 'react-page-visibility'
 
 export const Container = tw(ContainerBase)`bg-primary-500 -mx-8`
 const Image = styled.img(props => [
     `background-image: url("${props.src}");`,
     tw`rounded flex-shrink-0 h-80 md:h-96 bg-cover bg-center`
 ]);
+
+const MarqueeImage = ({ imgSrc, index }) => {
+    const { src } = useImage({
+        srcList: imgSrc,
+    })
+    return <Image src={src} alt="marquee img" key={index}/>
+}
 
 const images = [
     marquee1,
@@ -38,13 +47,28 @@ const images = [
     marquee12
 ]
 const Marquee = () => {
+    const renderImages = () => images.map((img, index) =>
+        <Suspense fallback={"Loading..."}>
+            <MarqueeImage alt={index} key={index} imgSrc={img}/>
+        </Suspense>
+    )
+
+    const [pageIsVisible, setPageIsVisible] = useState(true)
+
+    const handleVisibilityChange = (isVisible) => {
+        setPageIsVisible(isVisible)
+    }
+
     return (
         <Container>
-            <FastMarquee gradient={false}>
+            <PageVisibility onChange={handleVisibilityChange}>
                 {
-                    images.map((img, index) => <Image alt={index} key={index} src={img}/>)
+                    pageIsVisible &&
+                    <FastMarquee gradient={false} gradientWidth={0} speed={100}>
+                        {renderImages()}
+                    </FastMarquee>
                 }
-            </FastMarquee>
+            </PageVisibility>
         </Container>
     )
 }

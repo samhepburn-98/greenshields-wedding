@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { NavLinks } from "../header/styles";
 import { Container, Content, Heading, HeroContainer, StyledHeader, Subheading } from "./styles";
 import tw from "twin.macro";
+import { ThreeDots } from "react-loader-spinner";
 
 const Footer = tw.div`flex items-center justify-center absolute text-primary-500 text-center sm:-mx-8 -mx-4 bottom-0 px-8 pb-8 max-w-none w-full`;
 const TimerContainer = tw.div`flex items-center justify-center rounded border border-solid border-primary-500 p-2 pb-4`
@@ -16,26 +17,28 @@ export default function Hero() {
         </NavLinks>,
     ];
 
-    const [timer, setTimer] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+    const [timer, setTimer] = useState({ days: -1, hours: -1, minutes: -1, seconds: -1 });
     const makeTimer = () => {
-        let endTime = new Date("October 14, 2023 11:00:00 UTC");
+        let endTime = new Date("March 14, 2023 11:00:00 UTC");
         let endTimeParse = (Date.parse(endTime)) / 1000;
         let now = new Date();
         let nowParse = (Date.parse(now) / 1000);
         let timeLeft = endTimeParse - nowParse;
+
         let days = Math.floor(timeLeft / 86400);
         let hours = Math.floor((timeLeft - (days * 86400)) / 3600);
         let minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600)) / 60);
         let seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
-        if (hours < "10") {
-            hours = "0" + hours;
-        }
-        if (minutes < "10") {
-            minutes = "0" + minutes;
-        }
-        if (seconds < "10") {
-            seconds = "0" + seconds;
-        }
+
+        if (hours < "10") hours = "0" + hours;
+        if (minutes < "10") minutes = "0" + minutes;
+        if (seconds < "10") seconds = "0" + seconds;
+
+        if (days < 0) days = 0
+        if (hours < 0) hours = 0
+        if (minutes < 0) minutes = 0
+        if (seconds < 0) seconds = 0;
+
         setTimer({
             days, hours, minutes, seconds
         });
@@ -46,6 +49,24 @@ export default function Hero() {
             makeTimer();
         }, 1000);
     }, [])
+
+    const renderTimerValue = (value) => {
+        return (
+            value === -1
+                ? <ThreeDots
+                    height="50"
+                    width="50"
+                    radius="9"
+                    color="#233244"
+                    ariaLabel="three-dots-loading"
+                    wrapperStyle={{}}
+                    wrapperClassName=""
+                    visible={true}
+                />
+                : value
+        )
+    }
+
 
     return (
         <Container>
@@ -64,7 +85,7 @@ export default function Hero() {
                     <TimerContainer>
                         <TimerElement>
                             <TimerValue>
-                                {timer.days}
+                                {renderTimerValue(timer.days)}
                             </TimerValue>
                             <TimerLabel>
                                 Days
@@ -75,7 +96,7 @@ export default function Hero() {
                         </TimerSeparator>
                         <TimerElement>
                             <TimerValue>
-                                {timer.hours}
+                                {renderTimerValue(timer.hours)}
                             </TimerValue>
                             <TimerLabel>
                                 Hours
@@ -86,7 +107,7 @@ export default function Hero() {
                         </TimerSeparator>
                         <TimerElement>
                             <TimerValue>
-                                {timer.minutes}
+                                {renderTimerValue(timer.minutes)}
                             </TimerValue>
                             <TimerLabel>
                                 Minutes
@@ -97,7 +118,7 @@ export default function Hero() {
                         </TimerSeparator>
                         <TimerElement>
                             <TimerValue>
-                                {timer.seconds}
+                                {renderTimerValue(timer.seconds)}
                             </TimerValue>
                             <TimerLabel>
                                 Seconds

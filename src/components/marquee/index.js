@@ -55,7 +55,7 @@ const Marquee = () => {
             radius="9"
             color="#D9DBD3"
             ariaLabel="three-dots-loading"
-            wrapperStyle={{}}
+            wrapperStyle={{ padding: "40px" }}
             wrapperClassName=""
             visible={true}
         />}>

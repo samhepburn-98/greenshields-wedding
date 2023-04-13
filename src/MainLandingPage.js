@@ -7,7 +7,6 @@ import Testimonial from "components/testimonials";
 import VerticalWithAlternateImageAndTextFeatures from "components/features";
 import Footer from "components/footers";
 import ThreeColSliderCards from "./components/slider-cards";
-import Message from "components/message";
 import TwoColumnPrimaryBackgroundFAQS from "components/faqs";
 import Marquee from "./components/marquee";
 
@@ -21,7 +20,6 @@ export default function Home() {
             <ThreeColSliderCards/>
             <Testimonial/>
             <TwoColumnPrimaryBackgroundFAQS/>
-            <Message/>
             <Footer/>
         </AnimationRevealPage>
     );

@@ -5,11 +5,13 @@ import {
     Column,
     Description,
     Divider,
-    FAQSContainer,
+    FAQSContainer, GiftsContainer,
+    GiftsDescription,
     HeaderContent,
     Heading,
     QuestionText,
-    SectionContainer, Subheading
+    SectionContainer,
+    Subheading
 } from "./styles";
 
 export default ({
@@ -40,7 +42,7 @@ export default ({
                         {
                             question: "Where should I park?",
                             answer:
-                                "There is a pay and display car park opposite the church, along with free street parking in the surrounding roads. You can pay at the pay and display using the “X” app. There is plenty of free parking at the venue, however any cars left overnight will need to be collected the following morning."
+                                "There is a pay and display car park opposite the church, along with free street parking in the surrounding roads. You can pay at the pay and display using the PayByPhone app. There is plenty of free parking at the venue, however any cars left overnight will need to be collected the following morning."
                         },
                         {
                             question: "Is the wedding indoors or outdoors?",
@@ -63,6 +65,16 @@ export default ({
         <SectionContainer>
             <ContentWithPaddingXl>
                 <Column>
+                    <GiftsContainer style={{ width: "100%" }}>
+                        <Heading>Gifts</Heading>
+                        <GiftsDescription>
+                            Sharing our special day with us is more than enough, however for those wishing to buy a
+                            gift, a cash contribution towards making our dream honeymoon come true would be very much
+                            appreciated.
+                        </GiftsDescription>
+                        <Divider/>
+                    </GiftsContainer>
+
                     <HeaderContent>
                         {subheading && <Subheading>{subheading}</Subheading>}
                         <Heading>{heading}</Heading>

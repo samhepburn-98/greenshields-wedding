@@ -15,13 +15,12 @@ export default () => {
         },
         {
             imageSrc: venuePic,
-            subtitle: "18:00",
+            subtitle: "Daytime Reception - Following ceremony\nEvening Reception - From 18:30",
             title: "The Reception",
             description:
                 "The White Hart Inn\nInns Lane\nMoorwood Moor\nAlfreton\nDE55 7NU",
             url: "https://goo.gl/maps/zTJ6khM2gq9Gvnkt8"
         },
-
     ];
 
     return (
@@ -33,7 +32,7 @@ export default () => {
                             <Card key={i} reversed={i % 2 === 1}>
                                 <Image imageSrc={card.imageSrc}/>
                                 <Details>
-                                    <Subtitle>{card.subtitle}</Subtitle>
+                                    <Subtitle style={{ whiteSpace: "pre-wrap" }}>{card.subtitle}</Subtitle>
                                     <Title>{card.title}</Title>
                                     <Description style={{ whiteSpace: "pre-wrap" }}>{card.description}</Description>
                                     <Link href={card.url}>Tap for directions</Link>

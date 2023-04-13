@@ -18,6 +18,7 @@ import tw from "twin.macro";
 import { Container as ContainerBase } from "../misc/Layouts";
 import { useImage } from "react-image";
 import PageVisibility from 'react-page-visibility'
+import { ThreeDots } from "react-loader-spinner";
 
 export const Container = tw(ContainerBase)`bg-primary-500 -mx-8`
 const Image = styled.img(props => [
@@ -48,7 +49,16 @@ const images = [
 ]
 const Marquee = () => {
     const renderImages = () => images.map((img, index) =>
-        <Suspense fallback={"Loading..."}>
+        <Suspense fallback={<ThreeDots
+            height="80"
+            width="80"
+            radius="9"
+            color="#D9DBD3"
+            ariaLabel="three-dots-loading"
+            wrapperStyle={{}}
+            wrapperClassName=""
+            visible={true}
+        />}>
             <MarqueeImage alt={index} key={index} imgSrc={img}/>
         </Suspense>
     )
@@ -64,7 +74,7 @@ const Marquee = () => {
             <PageVisibility onChange={handleVisibilityChange}>
                 {
                     pageIsVisible &&
-                    <FastMarquee gradient={false} gradientWidth={0} speed={100}>
+                    <FastMarquee gradient={false} gradientWidth={0} speed={40}>
                         {renderImages()}
                     </FastMarquee>
                 }

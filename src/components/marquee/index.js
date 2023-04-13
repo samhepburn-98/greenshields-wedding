@@ -13,7 +13,7 @@ import marquee10 from "../../images/marquee/marquee10.JPG";
 import marquee11 from "../../images/marquee/marquee11.jpeg";
 import marquee12 from "../../images/marquee/marquee12.jpeg";
 
-import React from "react";
+import React, { memo } from "react";
 import tw from "twin.macro";
 import { Container as ContainerBase } from "../misc/Layouts";
 
@@ -49,4 +49,4 @@ const Marquee = () => {
     )
 }
 
-export default Marquee
+export default memo(Marquee)

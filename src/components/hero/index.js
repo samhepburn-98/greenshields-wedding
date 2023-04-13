@@ -19,7 +19,7 @@ export default function Hero() {
 
     const [timer, setTimer] = useState({ days: -1, hours: -1, minutes: -1, seconds: -1 });
     const makeTimer = () => {
-        let endTime = new Date("March 14, 2023 11:00:00 UTC");
+        let endTime = new Date("October 14, 2023 11:00:00 UTC");
         let endTimeParse = (Date.parse(endTime)) / 1000;
         let now = new Date();
         let nowParse = (Date.parse(now) / 1000);

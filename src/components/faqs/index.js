@@ -27,7 +27,7 @@ export default ({
                         {
                             question: "Is there a dress code?",
                             answer:
-                                "We ask that you wear formal attire."
+                                "We ask that you wear formal attire. No jeans. No trainers."
                         },
                         {
                             question: "Can I bring a +1?",

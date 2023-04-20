@@ -21,7 +21,7 @@ export default ({
                         {
                             question: "When is the RSVP deadline?",
                             answer:
-                                "Please RSVP by 30th June 2023 so we can get an accurate headcount. The password to complete the RSVP form is on your invite."
+                                "Please RSVP by 1st June 2023 so we can get an accurate headcount. The password to complete the RSVP form is on your invite."
                         },
                         {
                             question: "Is there a dress code?",

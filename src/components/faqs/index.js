@@ -56,7 +56,7 @@ export default ({
                         {
                             question: "Who should I call with questions?",
                             answer:
-                                "Leading up to the wedding, feel free to contact Mike or Mariesa with any questions. However, if you have any problems on the day we ask that you contact Hannah or Sam using the numbers below.\n Hannah Greenshields - 07590 434561\n Sam Hepburn - 07775 730891"
+                                "Leading up to the wedding, feel free to contact Mike or Mariesa with any questions. However, if you have any problems on the day we ask that you contact Hannah or Sam using the numbers below.\n Hannah Greenshields - 07XXX XXXXXX\n Sam Hepburn - 07XXX XXXXXX"
                         },
                     ]
                 }) => {

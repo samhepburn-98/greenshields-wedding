@@ -2,7 +2,7 @@ import React from "react";
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 
 import Hero from "components/hero";
-import DownloadAppCTA from "components/cta";
+import RsvpCta from "components/cta";
 import Testimonial from "components/testimonials";
 import VerticalWithAlternateImageAndTextFeatures from "components/features";
 import Footer from "components/footers";
@@ -14,7 +14,7 @@ export default function Home() {
     return (
         <AnimationRevealPage>
             <Hero/>
-            <DownloadAppCTA/>
+            <RsvpCta/>
             <Marquee/>
             <VerticalWithAlternateImageAndTextFeatures/>
             <ThreeColSliderCards/>

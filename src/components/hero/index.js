@@ -18,36 +18,29 @@ export default function Hero() {
     ];
 
     const [timer, setTimer] = useState({ days: -1, hours: -1, minutes: -1, seconds: -1 });
-    const makeTimer = () => {
-        let endTime = new Date("October 14, 2023 11:00:00 UTC");
-        let endTimeParse = (Date.parse(endTime)) / 1000;
-        let now = new Date();
-        let nowParse = (Date.parse(now) / 1000);
-        let timeLeft = endTimeParse - nowParse;
-
-        let days = Math.floor(timeLeft / 86400);
-        let hours = Math.floor((timeLeft - (days * 86400)) / 3600);
-        let minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600)) / 60);
-        let seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
-
-        if (hours < "10") hours = "0" + hours;
-        if (minutes < "10") minutes = "0" + minutes;
-        if (seconds < "10") seconds = "0" + seconds;
-
-        if (days < 0) days = 0
-        if (hours < 0) hours = 0
-        if (minutes < 0) minutes = 0
-        if (seconds < 0) seconds = 0;
-
-        setTimer({
-            days, hours, minutes, seconds
-        });
-    }
 
     useEffect(() => {
-        setInterval(() => {
-            makeTimer();
-        }, 1000);
+        const makeTimer = () => {
+            const endTime = Date.parse("October 14, 2023 11:00:00 UTC") / 1000;
+            const now = Date.now() / 1000;
+            const timeLeft = Math.max(endTime - now, 0);
+
+            const days = Math.floor(timeLeft / 86400);
+            const hours = Math.floor((timeLeft % 86400) / 3600);
+            const minutes = Math.floor((timeLeft % 3600) / 60);
+            const seconds = Math.floor(timeLeft % 60);
+
+            setTimer({
+                days,
+                hours: String(hours).padStart(2, "0"),
+                minutes: String(minutes).padStart(2, "0"),
+                seconds: String(seconds).padStart(2, "0")
+            });
+        }
+
+        makeTimer();
+        const interval = setInterval(makeTimer, 1000);
+        return () => clearInterval(interval);
     }, [])
 
     const renderTimerValue = (value) => {

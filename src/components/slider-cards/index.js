@@ -78,7 +78,7 @@ export default function ThreeColSliderCards() {
     ]
 
     const handleUrlClick = (url) => {
-        if (url) window.open(url, "noreferrer");
+        if (url) window.open(url, "_blank", "noopener,noreferrer");
     }
 
     return (

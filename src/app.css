@@ -1,8 +1,7 @@
 @font-face {
     font-family: "Gilda Display";
-    src: url("./styles/fonts/Gilda_Display/GildaDisplay-Regular.ttf") format("ttf"),
-    url("./styles/fonts/Gilda_Display/GildaDisplay-Regular.ttf") format("ttf");
-    font-weight: bold;
+    src: url("./styles/fonts/Gilda_Display/GildaDisplay-Regular.ttf") format("truetype");
+    font-weight: 400;
     font-display: swap;
 }
 

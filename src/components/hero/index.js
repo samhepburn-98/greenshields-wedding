@@ -70,7 +70,6 @@ export default function Hero() {
 
     return (
         <Container>
-            {/*<OpacityOverlay/>*/}
             <HeroContainer>
                 <StyledHeader color="navy" links={navLinks}/>
                 <Content>

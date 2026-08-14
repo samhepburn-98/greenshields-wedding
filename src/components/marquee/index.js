@@ -70,7 +70,7 @@ const Marquee = () => {
     }
 
     return (
-        <Container id="FIND ME" style={{ left: "-50%", width: "200vw" }}>
+        <Container style={{ left: "-50%", width: "200vw" }}>
             <PageVisibility onChange={handleVisibilityChange}>
                 {
                     pageIsVisible &&

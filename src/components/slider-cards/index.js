@@ -46,7 +46,6 @@ export default function ThreeColSliderCards() {
         ]
     };
 
-    /* Change this according to your needs */
     const cards = [
         {
             imageSrc: "hotels/horse-and-jockey.png",
@@ -85,13 +84,11 @@ export default function ThreeColSliderCards() {
     return (
         <Container>
             <Content>
-                {/*<HeadingWithControl>*/}
-                    <Heading>Nearby Hotels</Heading>
-                    <Controls>
-                        <PrevButton onClick={sliderRef?.slickPrev}><ChevronLeftIcon/></PrevButton>
-                        <NextButton onClick={sliderRef?.slickNext}><ChevronRightIcon/></NextButton>
-                    </Controls>
-                {/*</HeadingWithControl>*/}
+                <Heading>Nearby Hotels</Heading>
+                <Controls>
+                    <PrevButton onClick={sliderRef?.slickPrev}><ChevronLeftIcon/></PrevButton>
+                    <NextButton onClick={sliderRef?.slickNext}><ChevronRightIcon/></NextButton>
+                </Controls>
                 <CardSlider ref={setSliderRef} {...sliderSettings}>
                     {cards.map((card, index) => (
                         <Card key={index}>

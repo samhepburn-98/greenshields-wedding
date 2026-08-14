@@ -10,38 +10,17 @@ import {
     LogoLink,
     MobileNavLinks,
     MobileNavLinksContainer,
-    NavLink,
-    NavLinks,
-    PrimaryLink
+    NavLinks
 } from "./styles";
 import navyLogo from "../../images/MandM_navy.png";
 import ivoryLogo from "../../images/MandM_ivory.png";
 
-export default ({ roundedHeaderButton = false, logoLink, links, className, collapseBreakpointClass = "lg", color = "navy" }) => {
-    /*
-     * This header component accepts an optionals "links" prop that specifies the links to render in the navbar.
-     * This links props should be an array of "NavLinks" components which is exported from this file.
-     * Each "NavLinks" component can contain any amount of "NavLink" component, also exported from this file.
-     * This allows this Header to be multi-column.
-     * So If you pass only a single item in the array with only one NavLinks component as root, you will get 2 column header.
-     * Left part will be LogoLink, and the right part will be the NavLinks component you
-     * supplied.
-     * Similarly if you pass 2 items in the links array, then you will get 3 columns, the left will be "LogoLink", the center will be the first "NavLinks" component in the array and the right will be the second "NavLinks" component in the links array.
-     * You can also choose to directly modify the links here by not passing any links from the parent component and
-     * changing the defaultLinks variable below.
-     * If you manipulate links here, all the styling on the links is already done for you. If you pass links yourself though, you are responsible for styling the links or use the helper styled components that are defined here (NavLink)
-     */
+// Accepts a "links" prop: an array of NavLinks components (exported from ./styles),
+// each containing any number of NavLink components. One NavLinks entry renders a
+// two-column header (logo left, links right); two entries render three columns.
+export default ({ logoLink, links, className, collapseBreakpointClass = "lg", color = "navy" }) => {
     const defaultLinks = [
-        <NavLinks key={1}>
-            <NavLink href="/#">About</NavLink>
-            <NavLink href="/#">Blog</NavLink>
-            <NavLink href="/#">Pricing</NavLink>
-            <NavLink href="/#">Contact Us</NavLink>
-            <NavLink href="/#" tw="lg:ml-12!">
-                Login
-            </NavLink>
-            <PrimaryLink css={roundedHeaderButton && tw`rounded-full`} href="/#">Sign Up</PrimaryLink>
-        </NavLinks>
+        <NavLinks key={1}/>
     ];
 
     const { animation } = useAnimatedNavToggler();
@@ -50,7 +29,7 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
     const logo = color === "navy" ? navyLogo : ivoryLogo;
     const defaultLogoLink = (
         <LogoLink href="/">
-            <img src={logo} alt="M&M>" style={{ height: 50, width: "auto" }}/>
+            <img src={logo} alt="M&M logo" style={{ height: 50, width: "auto" }}/>
         </LogoLink>
     );
 

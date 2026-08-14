@@ -26,11 +26,11 @@ const Image = styled.img(props => [
     tw`rounded flex-shrink-0 h-80 md:h-96 bg-cover bg-center`
 ]);
 
-const MarqueeImage = ({ imgSrc, index }) => {
+const MarqueeImage = ({ imgSrc }) => {
     const { src } = useImage({
         srcList: imgSrc,
     })
-    return <Image src={src} alt="marquee img" key={index}/>
+    return <Image src={src} alt="marquee img"/>
 }
 
 const images = [
@@ -49,7 +49,7 @@ const images = [
 ]
 const Marquee = () => {
     const renderImages = () => images.map((img, index) =>
-        <Suspense fallback={<ThreeDots
+        <Suspense key={index} fallback={<ThreeDots
             height="80"
             width="80"
             radius="9"
@@ -59,7 +59,7 @@ const Marquee = () => {
             wrapperClassName=""
             visible={true}
         />}>
-            <MarqueeImage alt={index} key={index} imgSrc={img}/>
+            <MarqueeImage imgSrc={img}/>
         </Suspense>
     )
 
